@@ -1,10 +1,15 @@
+.center{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 nav.main-nav{
 display: grid;
 grid-template-columns: 400px 1fr;
 }
 ul.nav-ul{
     list-style-type: none;
-    margin-top:0px;
+    margin:0px;
     display:flex;
     color: black;
     align-items: stretch;
@@ -14,7 +19,8 @@ ul.nav-ul > li{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 150px;
+    margin-right: 75px;
+    margin-left: 75px
 }
 img.nav-logo{
 display: flex;
