@@ -11,7 +11,7 @@ body{
 
 .main-nav{
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 0.463fr 1fr;
 }
 
 .nav-ul{
