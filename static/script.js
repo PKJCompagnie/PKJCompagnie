@@ -1,4 +1,5 @@
 window.onpopstate = function(event) {
+    console.log(event.state.id)
     if (event.state.id == null) show('home-view')
     else show(event.state.id)
 }
