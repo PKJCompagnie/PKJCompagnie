@@ -9,21 +9,12 @@ window.onpopstate = function(event) {
 }
 
 
-// Refresh App
-if (window.performance) {
-    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-    console.log( "This page is reloaded" );
-    } else {
-    console.log( "This page is not reloaded");
-    }
-}
-
-
 // Main DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-button').forEach(button => {
         button.onclick = () => {
             show(button.dataset.id);
+            console.log("Changed 2")
             history.pushState({id: button.dataset.id}, '', '')
         }
     })
