@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-button').forEach(button => {
         button.onclick = () => {
             show(button.dataset.id);
-            console.log("Changed 2")
             history.pushState({id: button.dataset.id}, '', '')
         }
     })
