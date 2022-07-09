@@ -1,5 +1,5 @@
 // Const
-const IMAGES = ['basket.JPG', 'foo.jpg', 'bar.jpg', 'baz.jpg']
+const IMAGES = ['basket.jpg', 'foo.jpg', 'bar.jpg', 'baz.jpg']
 let image_index = 0
 
 // User undo the page
@@ -77,7 +77,7 @@ function bullets(num){
 
 // Change main-img src
 function changeImg(index){
-    document.querySelector('.picture').src = `${IMAGES[index]}`;
+    document.querySelector('.picture').src = `./${IMAGES[index]}`;
     changeBulletColor(index);
 }
 // Change Bullet Color
