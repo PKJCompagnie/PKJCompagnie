@@ -7,6 +7,16 @@ window.onpopstate = function(event) {
     }
 }
 
+if (window.performance) {
+  console.log("window.performance works fine on this browser");
+}
+console.log(performance.navigation.type);
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  console.log( "This page is reloaded" );
+} else {
+  console.log( "This page is not reloaded");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-button').forEach(button => {
         button.onclick = () => {
