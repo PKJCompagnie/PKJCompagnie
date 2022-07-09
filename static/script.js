@@ -1,5 +1,6 @@
 window.onpopstate = function(event) {
-    show(event.state.id)
+    if (event.state.id == null) show('home-view')
+    else show(event.state.id)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
